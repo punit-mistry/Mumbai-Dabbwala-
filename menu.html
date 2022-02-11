@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>MENU</h2>
+  
+
+  <div class="w3-accordion w3-card-4" style="width:50%">
+    <button onclick="myFunction('Demo1')" class="w3-btn-block w3-left-align">
+      VEG MENU
+    </button>
+    <div id="Demo1" class="w3-accordion-content">
+      <ul class="w3-ul">
+        <li> <h6>VEG Regular Lunchbox </h6>
+      <p class="w3-text-grey">3 Chapatis and 1 veg sabzi.</p><br></li>
+        
+	<li><h6>VEG Deluxe Lunchbox </h6>
+      <p class="w3-text-grey">3 Chapatis, 1 veg sabzi, dal, rice.</p><br>
+    
+	<li><h4>VEG Special Lunchbox </h4>
+      <p class="w3-text-grey">3 Chapatis, 2 veg sabzi, dal, rice, salad, sweet, </p><br>
+    </li>
+      </ul>  
+    </div>
+    <button onclick="myFunction('Demo2')" class="w3-btn-block w3-left-align">
+      NON-VEG MENU
+    </button>
+    <div id="Demo2" class="w3-accordion-content">
+      <ul class="w3-ul">
+	
+        <li><h6>NON-VEG Regular Lunchbox</h6>
+      <p class="w3-text-grey">3 Chapatis and 1 non-veg sabzi.</p><br></li>
+        </li>
+	
+        <li><h4>NON-VEG Deluxe Lunchbox </h4>
+      <p class="w3-text-grey">3 Chapatis, 1 non-veg sabzi, dal, rice.</p><br>
+        </li>
+
+        <li><h4>NON-VEG Special Lunchbox </h4>
+      <p class="w3-text-grey">3 Chapatis, 2 non-veg sabzi, dal, rice, salad, sweet, </p><br>
+      </li>
+
+      </ul>  
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

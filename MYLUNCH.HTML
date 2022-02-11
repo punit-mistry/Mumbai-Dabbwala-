@@ -1,0 +1,361 @@
+<?php
+include("connect.php");
+/*@$note=$_REQUEST['note'];*/
+?>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<title>Mumbai Dabbawala</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;
+
+    }
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+    h1{
+        text-shadow: 1px 1px 0 #444
+        
+    }
+    footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+    
+    
+    
+</style>
+   <div>
+<body style="background-color: #e6e6e6;">
+     
+<!-- Navbar (sit on top) -->
+
+      <div class="w3">
+<div class="w3-row w3-padding-large  w3-black">
+    
+     <div class="w3-col s2">
+         <a href="#home" class="w3-button w3-wide w3-block w3-black ">HOME</a></div>
+   
+   
+
+  
+    <div class="w3-col s2">
+      <a href="#about" class="w3-button  w3-wide w3-block w3-black ">ABOUT</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#menu" class="w3-button  w3-wide w3-block w3-black ">MENU</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="media.html" class="w3-button  w3-wide w3-block w3-black ">MEDIA</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#contact" class="w3-button  w3-wide w3-block w3-black">ORDER</a>
+    </div>
+    
+    <div class="w3-col s2">
+      <a href="login.html" class="w3-button  w3-wide w3-block w3-black">LOGIN</a>
+    </div>
+          </div></div>
+
+
+
+
+
+
+<!-- Header -->
+<style>
+.mySlides {display:none;}
+
+
+</style>
+<body>
+  
+    <hr><div class="w3-col s18">
+  <a href="https://mumbaidabbawala.in/" class="w3-button w3-wide w3-block ">
+      <img src="logo.png">
+        </a>
+    <div class="w3-container w3-center w3-animate-zoom ">
+  <h1 e6e6e6  >Welcome to Mumbai style  Dabbawala. </h1>
+    </div>
+
+
+<div class="w3-content w3-section" style="max-width:1000px;min-width:500px" id="home">
+  <img class="mySlides" src="abc.jpg"  style="width:100%">
+  <img class="mySlides" src="db2.jpg" style="width:100%" >
+  <img class="mySlides" src="db3.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+    </div>
+</body>
+
+
+
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+
+<div class="w3-container ">
+
+
+
+
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="dabba1.jpg" class="w3-round w3-image w3-opacity-min" alt="dabba1" width="600" height="750"><br><br>
+    <img src="md.jpg" class="w3-round w3-image w3-opacity-min" alt="dabba1" width="600" height="750">
+</div>
+
+    <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">About</h1><br>
+      <h5 class="w3-center">Tradition since 1892</h5>
+      <p class="w3-large">It all started about 125 years back when a Parasi banker wanted to have home cooked food regularly in office and gave this responsibility to the first ever Dabbawala. Other people also liked the idea and the demand for Dabba delivery soared.<br> </p>
+      <p> But if you ask us, there is much more then lunch that goes in the dabba.
+The foremost is love and caring of the housewives who make sure their loved ones get the healthy food from home.
+And trust! That they have on dabbawala. If the Dabba system is going strong even after 125 years, we must thank the Mumbai housewives.
+Trust is also seen in everything that we do. A typical dabba changes hands 3-4 times in its journey... Sometimes even 6 times. So the chances that the dabbawala who took the tiffin box from home will deliver the same dabba to final destination is almost remote.
+If you ask us what actually goes in a tiffin box, we can't tell you. We don't open the boxes. But customers have told us that they even share messages from home to office through these dabbas! A Cinema ticket, a flower...an apology note...
+A dabba weighs about 1.5 KG. We guess, pulses, vegetables, about 4 chapatis and rice is also there in the Dabba.
+How we know? That's what we get from home in our Dabba!</p>
+    </div>
+  </div>
+  
+  <hr>
+    
+ <!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE <span>MENU </span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Veg');" id="myLink">
+        <div class="w3-col s6 tablink">Veg</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Non-Veg');">
+        <div class="w3-col s6 tablink">Non-Veg</div>
+      </a>
+    </div>
+
+    <div id="Veg" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Veg Regular Lunchbox  </h5>
+      <p class="w3-text-grey">3 Chapatis and 1 veg sabzi.   ...RS.60/- (Dabba 1)</p><br>
+         
+      <h5>Veg Deluxe Lunchbox</h5>
+      <p class="w3-text-grey">3 Chapatis, 1 veg sabzi, dal, rice.   ...RS.100/- (Dabba 2)</p><br>
+    
+      <h5>Veg Special Lunchbox</h5>
+      <p class="w3-text-grey">3 Chapatis, 2 veg sabzi, dal, rice, salad, sweet.     ....RS.130/- (Dabba 3)</p><br>
+    
+    </div>
+
+    <div id="Non-Veg" class="w3-container menu w3-padding-48 w3-card">
+      
+      <h6>Non-Veg Regular Lunchbox </h6>
+      <p class="w3-text-grey">3 Chapatis and 1 non-veg sabzi.       ...70/- (Dabba 4)</p><br>
+    
+      <h5>Non-Veg Deluxe Lunchbox</h5>
+      <p class="w3-text-grey">3 Chapatis, 1 non-veg sabzi, dal, rice.       ...110/- (Dabba 5)</p><br>
+    
+      <h5>Non-Veg Special Lunchbox</h5>
+      <p class="w3-text-grey">3 Chapatis, 2 non-veg sabzi, dal, rice, salad, sweet.     ....150/- (Dabba 6)</p><br>
+    
+    </div>  
+    <img src="about.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+      </h5>
+  </div>
+</div>
+<script>
+    
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-black", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-black";
+ }
+ document.getElementById("myLink").click();
+ </script>
+
+
+
+
+
+
+
+ 
+
+      
+    </div>
+    
+    
+
+  <hr>
+
+  <div>
+    
+
+
+
+
+  <!-- order Section -->
+    
+ <br>
+  <div class="w3-container w3-padding-24" id="contact">
+    <h1 style="text-align: center;">ORDER</h1><br>
+      <div class=" w3-row w3-padding-large  w3-black">
+     <div class="w3-col s14">
+      <a href="form.php" class="w3-button  w3-wide w3-block w3-black">Order Now </a>
+          </div></div> <hr> 
+    <p>We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    
+ <p>You can also contact us by phone 02228145693 or you can send us a message </p>
+
+ <div class=" w3-row ">
+  <div class="w3-col s2 ">
+   <a href="https://punitmistr.getform.com/erjl8" class="w3-button  w3-wide w3-block w3-black
+   ">FeedBack </a></div>
+</div>
+
+    
+
+     
+  </div>
+
+
+  
+  </div>
+    
+
+    <!-- blogs section starts  -->
+
+<h1> Our Blogs </h1>
+  
+  
+
+
+
+<!-- blogs section ends -->
+
+
+<!-- Footer -->
+</div>
+
+<footer class="footer-distributed" style="position:relative;">
+
+			<div class="footer-left">
+
+				<h3>Mumbai<span>Dabbawalla</span></h3>
+
+				<p class="footer-links">
+					<a href="#home" class="link-1">Home</a>
+					
+				
+			
+
+
+				
+					<a href="#about">About</a>
+					<a href="Service.html">Services</a>
+				
+					
+					<a href="#contact">Contact</a>
+				</p>
+
+				<p class="footer-company-name">MumbaiDabbawala © 2021</p><br>
+        <p class="footer-company-name"> Punit Mistry © 2021</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+                    <p><span> Navyog Mension, Sleater Road, Naushir<br> Bharucha Marg,Opposite Krishna Palace Hotel,<br> Grant Road, Mumbai – 400007</p>
+				</div>
+
+				<div>
+					<i style="font-size:24px" class="fa">&#xf095;</i>
+					<p>
+            (+91) 9870419916</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:Info@Mumbaidabbawala.In">Info@Mumbaidabbawala.In</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Since 1890, Dressed in white outfit and traditional Gandhi Cap, Mumbai Army of 5,000 Dabbawalas fulfilling the 
+          hunger of almost 200,000 Mumbaikar with home-cooked food that is lug between home and office daily.<br>
+        
+            Punit Mistry © 2021 
+            
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/MumbaiDabbawala/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/mumbaidabbewala"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/company/mumbai-dabbawala/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/mumbai_dabbawala/"><i class="fa fa-instagram"></i></a>
+          
+
+				</div>
+
+			</div>
+		</footer>
+
+    </div>
+  </div>
+</body>
+
+       </body>
+    </div>
+</html>
